@@ -1,8 +1,9 @@
 export class Bootable {
     /**
      * Update the state
+     * @param {number} delta The time delta since the last update, which is constant
      */
-    update() {
+    update(delta) {
 
     }
 
