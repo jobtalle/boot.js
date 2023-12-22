@@ -13,10 +13,10 @@ export function boot(bootable, fps) {
 
         updateTime += .001 * elapsedTime;
 
-        while (updateTime > updateRate) {
+        if (updateTime > updateRate) {
             bootable.update(updateRate);
 
-            updateTime -= updateRate;
+            updateTime -= updateRate * Math.trunc(updateTime / updateRate);
         }
 
         lastTime = time;
