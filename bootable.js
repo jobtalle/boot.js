@@ -8,6 +8,14 @@ export class Bootable {
     }
 
     /**
+     * A second update function that runs after the first
+     * @param {number} delta The time delta since the last update, which is constant
+     */
+    update2(delta) {
+
+    }
+
+    /**
      * Render a frame
      * @param {number} time The time interpolation factor in the range [0, 1]
      * @param {number} delta The time delta since the last frame
